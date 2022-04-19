@@ -65,6 +65,10 @@ const App = () => {
 
   return (
     <>
+    <img src={HeaderDarkDesktop} className="img-dark-desktop" alt="Desktop header" />
+    <img src={HeaderDarkMobile} className="img-dark-mobile" alt="Mobile header" />
+    <img src={HeaderLightDesktop} className="img-light-desktop" alt="Mobile header" />
+    <img src={HeaderLightMobile} className="img-light-mobile" alt="Mobile header" />
       <div className={"content " + theme}>
         <Header changeTheme={changeTheme} />
         <Add countTask={tasks.length} setReset={reset} reset={Reset} />
