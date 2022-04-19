@@ -1,0 +1,11 @@
+@use './colors' as color;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: color.$veryDarkBlue;
+    font-size: 18px;
+    min-height: 100vh;
+    transition: 1s ease
+}
