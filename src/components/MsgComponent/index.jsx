@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { BsInfoCircle } from 'react-icons/bs';
 
@@ -32,8 +32,23 @@ const Msg = ({tasks, filter, loading}) => {
   }, [tasks]);
 
   return (
-    <div>Msg</div>
+    <>
+      {
+        message ?
+        <div className="msg">
+          <BsInfoCircle className="icon" />
+          <h2 className="title" >{message.title}</h2>
+          <span className="text" >{message.text}</span>
+        </div>
+        : 
+        <div className="msg">
+          <BsInfoCircle className="icon" />
+          <h2 className="title" >title</h2>
+          <span className="text" >text</span>
+        </div>
+      }
+    </>
   )
 }
 
-export default Msg
+export default Msg;
