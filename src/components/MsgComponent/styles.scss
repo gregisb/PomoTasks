@@ -1,45 +1,42 @@
 @use '../../colors' as color;
 
-.add-task {
+.msg {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 1em 0em;
+    padding: 1em 0em;
     width: 100%;
     background-color: color.$veryDarkDesaturatedBlue;
-    gap: 1em;
-    margin-top: 1.5em;
-    border-radius: 6px;
+    font-family: "Josefin Sans", sans-serif;
     transition: 1s ease;
-    label {
-        display: inline;
-        content: " ";
-        width: 20px;
-        height: 20px;
-        background-color: transparent;
-        border: 1px solid color.$darkGrayishBlue;
-        border-radius: 150px;
-        cursor: pointer;
+    border-radius: 10px;
+    .icon {
+        color: rgb(22, 141, 184);
     }
-    input[type="text"] {
-        display: inline;
-        width: 80%;
-        background-color: transparent;
-        color: #fff;
-        border: none;
-        font-family: 'Josefin Sans', sans-serif;
-        padding: 1.5em 0em;
-        outline: none;
+    .title {
+        font-size: 1.3rem;
+        padding: 0.5em;
+        margin: 0;
+        color: rgb(255, 255, 255);
+        transition: 1s ease;
+    }
+    .text {
+        font-size: 0.9rem;
+        color: rgba(221, 205, 199, 0.707);
+        transition: 1s ease;
     }
 }
 
 .content.light {
-    .add-task {
+    .msg {
         background-color: color.$veryLightGray;
-        label {
-            border: 1px solid color.$lightGrayishBlue;
+        .title {
+            color: black;
         }
-        input[type="text"] {
-            color: color.$veryDarkGrayishBlue;
+        .text {
+            color: gray;
         }
     }
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './styles.scss';
 
 import { BsInfoCircle } from 'react-icons/bs';
 
