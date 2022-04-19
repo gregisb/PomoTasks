@@ -1,8 +1,9 @@
 import React from 'react';
+import Add from './components/AddComponent';
 
 const App = () => {
     return (
-        <div>Hello Wolrd</div>
+        <Add />
     )
 };
 
