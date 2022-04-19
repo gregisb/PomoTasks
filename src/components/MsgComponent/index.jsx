@@ -41,12 +41,8 @@ const Msg = ({tasks, filter, loading}) => {
           <h2 className="title" >{message.title}</h2>
           <span className="text" >{message.text}</span>
         </div>
-        : 
-        <div className="msg">
-          <BsInfoCircle className="icon" />
-          <h2 className="title" >title</h2>
-          <span className="text" >text</span>
-        </div>
+        : null 
+        
       }
     </>
   )
