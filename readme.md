@@ -9,7 +9,7 @@ O layout da TodoList foi desenvolvido como proposto pelo desafio e o Pomodoro Ti
 
 No timer, o usuário pode fazer uso da técnica pomodoro, com 25 minutos para estudo, 05 minutos para uma pausa curta e 15 para uma pausa longa.
 
-A ideia é baseada no site PomoFocus. E como tal, o usuário pode adcionar, remover e marcar as tarefas como conclúidas. Além disso, ele pode reordená-las e filtrá-las por tarefas concluídas ou a concluir. Também é possível excluir todas as tarefas concluídas de uma vez.
+Na TodoList pode adcionar, remover e marcar as tarefas como conclúidas. Além disso, ele pode reordená-las (drag and drop) e filtrá-las por tarefas concluídas ou a concluir. Também é possível excluir todas as tarefas concluídas de uma vez. Armazenamento dos dados no Firebase.
 
 Aplicação totalmente responsiva com opções de darkmode e lightmode.
 
