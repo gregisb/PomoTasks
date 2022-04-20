@@ -128,5 +128,8 @@
         .filter-items {
             background-color: color.$veryLightGray;
         }
+        button {
+            background-color: color.$veryLightGray !important;
+        }
     }
 }
