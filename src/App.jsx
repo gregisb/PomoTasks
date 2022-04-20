@@ -13,6 +13,7 @@ import Config from "./components/ConfigComponent";
 import Header from "./components/HeaderComponent";
 import Footer from "./components/FooterComponent";
 import Msg from "./components/MsgComponent";
+import Timer from './components/TimerComponent';
 
 // Images
 import HeaderDarkMobile from "./assets/img/bg-mobile-dark.jpg";
@@ -71,6 +72,7 @@ const App = () => {
     <img src={HeaderLightMobile} className="img-light-mobile" alt="Mobile header" />
       <div className={"content " + theme}>
         <Header changeTheme={changeTheme} />
+        <Timer />
         <Add countTask={tasks.length} setReset={reset} reset={Reset} />
         {loading ? (
           <div className="loading">
